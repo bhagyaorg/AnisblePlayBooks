@@ -1,5 +1,6 @@
-- hosts: tag_Name_tomcatServers
-  become: true
+#- hosts: tag_Name_tomcatServers
+ - hosts: all
+ become: true
   tasks:
     - name: Install Java
       yum:
